@@ -49,6 +49,19 @@ li{list-style-type:none;}
     color: white;
 }
 
+#btn-login{
+    height: 30px;
+    width: 80px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+    background-color: rgb(81, 155, 81);
+    
+    border-radius: 8px;
+    cursor: pointer;
+    padding-bottom: 10;
+}
 
 /* botão login */
 
@@ -56,16 +69,17 @@ li{list-style-type:none;}
 
 
 .banner-principal{
-position: relative;
- background-image: url(../hospedagem/img/mainbanner.png);
+position: relative;background-image: url(../hospedagem/img/mainbanner.jpg);
+ 
  height:85vh;
  width: 100vw;
  background-size: cover;
  display: flex;
  justify-content: center;
  flex-direction: column;
- align-items: center;
+ align-items: center; 
 }
+
 
 .titulo-page{
     font-family: 'Poppins', sans-serif; 
@@ -221,6 +235,7 @@ position: relative;
     font-family: 'Poppins', sans-serif; 
     font-size: 15px;
 }
+/* busca dominio */
 .container-busca{
     background-color: rgb(47, 43, 82);
     height: 400px;
@@ -248,6 +263,14 @@ position: relative;
 #text-dominio{
     width: 650px;
     height: 45px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+#text-dominio::placeholder{
+    font-size: 15px;
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif; 
+
 }
 #btn-busca{
     height: 60px;
@@ -257,6 +280,72 @@ position: relative;
     font-family: 'Poppins', sans-serif; 
     background-color: rgb(81, 155, 81);
     font-weight: 200;
-    border-radius: 8%;
+    border-radius: 8px;
     cursor: pointer;
+    padding-bottom: 10;
 }
+
+.container-contato{
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:30px;
+}
+.container-contato h2{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 45px;
+}
+.container-contato p{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 20px;
+    color: rgb(61, 61, 61);
+}
+
+#nome,#email{
+    height: 35px;
+    width: 250px;
+    border: 1px solid;
+    border-color: grey;
+    border-radius: 4px;
+}
+textarea{
+    height: 250px;
+    width: 558px;
+    border: 1px solid;
+    border-color: grey;
+    border-radius: 4px;
+}
+footer{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60;
+    font-family: 'Poppins', sans-serif; 
+}
+#nome,#email,textarea::placeholder{
+    font-size: 15px;
+    padding-left: 25px;
+
+}
+textarea::placeholder{
+    font-size: 15px;
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+/* media queris */
+/* 
+@media screen and (max-width:1200){
+    .logo{
+        padding-left: 40px;
+    }
+}
+@media screen and (max-width:1060){
+    .container-planos, .planos{
+        flex-wrap: wrap;
+    }
+} */
